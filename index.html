@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="dependencies/css/Semantic-UI-CSS-master/semantic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>AngasPoints Leaderboard</title>
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin-top: 1em;
+        }
+
+        .header {
+            font-weight: 700;
+            font-size: 50px;
+            color: rgb(44, 60, 73)
+        }
+
+        .second-place {
+            margin-top: 1em;
+        }
+
+        .third-place {
+            margin-top: 2em;
+        }
+
+        .leaderboard-table {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui center aligned container">
+        <p class="header">Pinaka Maangas</p>
+
+        <div class="top-three ui grid">
+            <div class="three column row cards">
+                <div class="column">
+                    <div class="ui card second-place">
+                        <div class="image">
+                            <a class="ui silver ribbon label">2ND PLACE</a>
+                            <img src="https://avatars.dicebear.com/api/big-smile/top2.svg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Spenz</a>
+                            <div class="meta">
+                                <span class="date">Joined in 2013</span>
+                            </div>
+                            <div class="description">
+                                Lorem Ipsum
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="user icon"></i>
+                                7 Angas Points
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui card">
+                        <div class="image">
+                            <a class="ui yellow ribbon label">1ST PLACE</a>
+                            <img src="https://avatars.dicebear.com/api/big-smile/top1.svg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Spenz</a>
+                            <div class="meta">
+                                <span class="date">Joined in 2013</span>
+                            </div>
+                            <div class="description">
+                                Lorem Ipsum
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="user icon"></i>
+                                22 Angas Points
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui card third-place">
+                        <div class="image">
+                            <a class="ui brown ribbon label">3RD PLACE</a>
+                            <img src="https://avatars.dicebear.com/api/big-smile/top3.svg">
+                        </div>
+                        <div class="content">
+                            <a class="header">Spenz</a>
+                            <div class="meta">
+                                <span class="date">Joined in 2013</span>
+                            </div>
+                            <div class="description">
+                                Lorem Ipsum
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="user icon"></i>
+                                3 Angas Points
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="leaderboard-table">
+            <table class="ui selectable celled table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Jamie</td>
+                    <td>Approved</td>
+                    <td>Requires call</td>
+                  </tr>
+                  <tr>
+                    <td>Jill</td>
+                    <td>Denied</td>
+                    <td>None</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>John</td>
+                    <td>No Action</td>
+                    <td>None</td>
+                  </tr>
+                  <tr>
+                    <td>Jamie</td>
+                    <td class="positive">Approved</td>
+                    <td class="warning">Requires call</td>
+                  </tr>
+                  <tr>
+                    <td>Jill</td>
+                    <td class="negative">Denied</td>
+                    <td>None</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+
+</html>
